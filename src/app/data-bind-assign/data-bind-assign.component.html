@@ -1,0 +1,11 @@
+<label>Username:</label>
+<input
+    class="form-control"
+    type="text"
+    [(ngModel)]="username"
+    (input)='onInput()'>
+<p>{{ username }}</p>
+<button
+    class="btn btn-warning"
+    [disabled]="isBlank"
+    (click)="onClear()">Clear</button>
